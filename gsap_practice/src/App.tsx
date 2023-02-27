@@ -1,17 +1,21 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import './App.css'
-import { IntroPage } from './pages/intro'
-import { YoyoPage } from './pages/yoyo'
+import { useState } from 'react';
+import reactLogo from './assets/react.svg';
+import { IntroPage } from './pages/intro';
+import { YoyoPage } from './pages/yoyo';
+import styled from 'styled-components';
+
+const Section = styled.section`
+  position: relative;
+  display: flex;
+  flex-direction: colum;
+`;
 function App() {
-
-
   return (
-    <div className="App">
+    <Section>
       {/* <IntroPage /> */}
       <YoyoPage />
-    </div>
-  )
+    </Section>
+  );
 }
 
-export default App
+export default App;
