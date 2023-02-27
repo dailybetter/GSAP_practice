@@ -53,7 +53,13 @@ export const BodyTextContainer = styled.div`
   justify-content: center;
   align-items: baseline;
 `;
+export const BodyTextDiv = styled.div`
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+`;
 export const BodyText = styled.span`
   font-size: 30px;
+  flex
   opacity: 1;
 `;

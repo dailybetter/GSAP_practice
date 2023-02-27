@@ -17,7 +17,7 @@ export const IntroPage = () => {
           <Styled.BodyText>박현우 입니다.</Styled.BodyText>
         </Styled.BodyTextContainer>
         <Styled.BackgrouundImg>
-          <img src="/main.jpg" alt="background" />
+          <img src="/main.jpg" alt="background" draggable={false} />
         </Styled.BackgrouundImg>
       </Styled.Main>
     </Styled.Container>
