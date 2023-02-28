@@ -34,11 +34,11 @@ export const Main = styled.article`
   //   }
 `;
 export const BackgrouundImg = styled.div`
-  position: fixed;
+  // position: fixed;
   top: 0;
-  opacity: 0.5;
   width: 100vw;
   text-align: center;
+  opacity: 0.4;
   img {
     width: 80vw;
     height: 100vh;
@@ -49,17 +49,21 @@ export const BackgrouundImg = styled.div`
 // middle intro h2
 export const BodyTextContainer = styled.div`
   display: flex;
+  position: absolute;
   flex-direction: column;
   justify-content: center;
   align-items: baseline;
+  opacity: 1;
+  z-index: 1;
 `;
 export const BodyTextDiv = styled.div`
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
 `;
-export const BodyText = styled.span`
+export const BodyText = styled.div`
   font-size: 30px;
   flex
   opacity: 1;
+  margin-left: 50vw;
 `;

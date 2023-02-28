@@ -6,18 +6,34 @@ import * as Styled from './styled';
 export const IntroPage = () => {
   const h1 = useRef(null);
   useEffect(() => {
-    gsap.to('h1', { x: 400 });
-  });
+    gsap
+      .timeline()
+      .fromTo(
+        '.one',
+        { duration: 0.5, opacity: 0, y: 0 },
+        { duration: 0.5, opacity: 1, y: 50 },
+      )
+      .fromTo(
+        '.two',
+        { duration: 0.5, opacity: 0, y: 0 },
+        { duration: 0.5, opacity: 1, y: 50 },
+      )
+      .fromTo(
+        '.tre',
+        { duration: 0.5, opacity: 0, y: 0 },
+        { duration: 0.5, opacity: 1, y: 50 },
+      );
+  }, []);
   return (
     <Styled.Container>
       <Styled.Main>
         <Styled.BodyTextContainer>
-          <Styled.BodyText>안녕하세요</Styled.BodyText>
-          <Styled.BodyText>프론트엔드 개발자를 희망하는</Styled.BodyText>
-          <Styled.BodyText>박현우 입니다.</Styled.BodyText>
+          <Styled.BodyText className="one">안녕하세요</Styled.BodyText>
+          <Styled.BodyText className="two">프론트엔드 개발자를 희망하는</Styled.BodyText>
+          <Styled.BodyText className="tre">박현우 입니다.</Styled.BodyText>
         </Styled.BodyTextContainer>
         <Styled.BackgrouundImg>
-          <img src="/main.jpg" alt="background" draggable={false} />
+          <img src="/moon.jpg" alt="background" draggable={false} />
         </Styled.BackgrouundImg>
       </Styled.Main>
     </Styled.Container>
