@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-
+import KeyboardDoubleArrowDownIcon from '@mui/icons-material/KeyboardDoubleArrowDown';
 export const Container = styled.section`
   display: flex;
   position: relative;
@@ -43,6 +43,7 @@ export const BackgrouundImg = styled.div`
     width: 80vw;
     height: 100vh;
     object-fit: cover;
+    z-index: -1;
   }
 `;
 
@@ -66,4 +67,16 @@ export const BodyText = styled.div`
   flex
   opacity: 1;
   margin-left: 50vw;
+`;
+
+export const ArrowDown = styled(KeyboardDoubleArrowDownIcon)`
+  position: absolute;
+  right: 0;
+  bottom: 0;
+`;
+
+export const IconContainer = styled.div`
+  position: absolute;
+  right: 3vw;
+  bottom: 2vw;
 `;

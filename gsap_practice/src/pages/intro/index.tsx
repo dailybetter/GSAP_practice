@@ -2,7 +2,7 @@ import gsap from 'gsap';
 import React from 'react';
 import { useRef, useEffect } from 'react';
 import * as Styled from './styled';
-
+import KeyboardDoubleArrowDownIcon from '@mui/icons-material/KeyboardDoubleArrowDown';
 export const IntroPage = () => {
   const h1 = useRef(null);
   useEffect(() => {
@@ -36,6 +36,9 @@ export const IntroPage = () => {
           <img src="/moon.jpg" alt="background" draggable={false} />
         </Styled.BackgrouundImg>
       </Styled.Main>
+      <Styled.IconContainer>
+        <KeyboardDoubleArrowDownIcon fontSize="large" />
+      </Styled.IconContainer>
     </Styled.Container>
   );
 };
