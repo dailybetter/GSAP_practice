@@ -10,18 +10,20 @@ export const IntroPage = () => {
       .timeline()
       .fromTo(
         '.one',
-        { duration: 0.5, opacity: 0, y: 0 },
-        { duration: 0.5, opacity: 1, y: 50 },
+        { duration: 1, opacity: 0, y: 0 },
+        { duration: 1, opacity: 1, y: 50 },
       )
       .fromTo(
         '.two',
-        { duration: 0.5, opacity: 0, y: 0 },
-        { duration: 0.5, opacity: 1, y: 50 },
+        { duration: 1, opacity: 0, y: 0 },
+        { duration: 1, opacity: 1, y: 50 },
+        '-=0.3',
       )
       .fromTo(
         '.tre',
-        { duration: 0.5, opacity: 0, y: 0 },
-        { duration: 0.5, opacity: 1, y: 50 },
+        { duration: 1, opacity: 0, y: 0 },
+        { duration: 1, opacity: 1, y: 50 },
+        '-=0.3',
       );
   }, []);
   return (

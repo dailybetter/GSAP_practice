@@ -1,7 +1,6 @@
 import { useState } from 'react';
 import reactLogo from './assets/react.svg';
-import { IntroPage } from './pages/intro';
-// import { YoyoPage } from './pages/yoyo';
+import { IntroPage } from './components/intro';
 import styled from 'styled-components';
 
 const Section = styled.section`
