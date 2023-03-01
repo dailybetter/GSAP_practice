@@ -13,17 +13,14 @@ import MenuIcon from '@mui/icons-material/Menu';
 import Toolbar from '@mui/material/Toolbar';
 import Typography from '@mui/material/Typography';
 import Button from '@mui/material/Button';
-
+import * as Styled from './styled';
+import Link from '@mui/material/Link';
+import { LIGHT_GREEN } from '../../colorPalette';
 interface Props {
-  /**
-   * Injected by the documentation to work in an iframe.
-   * You won't need it on your project.
-   */
   window?: () => Window;
 }
 
 const drawerWidth = 240;
-const navItems = ['Home', 'About', 'Contact'];
 
 export const MyAppBar = (props: Props) => {
   const { window } = props;
@@ -36,18 +33,35 @@ export const MyAppBar = (props: Props) => {
   const drawer = (
     <Box onClick={handleDrawerToggle} sx={{ textAlign: 'center' }}>
       <Typography variant="h6" sx={{ my: 2 }}>
-        MUI
+        FE개발자 박현우
       </Typography>
       <Divider />
       <List>
-        {navItems.map((item) => (
-          <ListItem key={item} disablePadding>
-            <ListItemButton sx={{ textAlign: 'center' }}>
-              <ListItemText primary={item} />
-            </ListItemButton>
-          </ListItem>
-        ))}
+        <Styled.MyLink
+          color={LIGHT_GREEN}
+          href="https://github.com/dailybetter"
+          target="_blank"
+          sx={{
+            '&:hover': {
+              color: `${LIGHT_GREEN}`,
+            },
+          }}
+        >
+          GitHub
+        </Styled.MyLink>
       </List>
+      <Styled.MyLink
+        color={LIGHT_GREEN}
+        href="https://dailybetter.github.io/"
+        target="_blank"
+        sx={{
+          '&:hover': {
+            color: `${LIGHT_GREEN}`,
+          },
+        }}
+      >
+        Blog
+      </Styled.MyLink>
     </Box>
   );
 
@@ -75,14 +89,33 @@ export const MyAppBar = (props: Props) => {
             component="div"
             sx={{ flexGrow: 1, display: { xs: 'none', sm: 'block' } }}
           >
-            MUI
+            FE개발자 박현우
           </Typography>
           <Box sx={{ display: { xs: 'none', sm: 'block' } }}>
-            {navItems.map((item) => (
-              <Button key={item} sx={{ color: '#fff' }}>
-                {item}
-              </Button>
-            ))}
+            <Styled.MyLink
+              color="#FFFFFF"
+              href="https://github.com/dailybetter"
+              target="_blank"
+              sx={{
+                '&:hover': {
+                  color: `${LIGHT_GREEN}`,
+                },
+              }}
+            >
+              GitHub
+            </Styled.MyLink>
+            <Styled.MyLink
+              color="#FFFFFF"
+              href="https://dailybetter.github.io/"
+              target="_blank"
+              sx={{
+                '&:hover': {
+                  color: `${LIGHT_GREEN}`,
+                },
+              }}
+            >
+              Blog
+            </Styled.MyLink>
           </Box>
         </Toolbar>
       </AppBar>
