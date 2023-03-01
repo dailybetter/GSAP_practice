@@ -2,6 +2,8 @@ import gsap from 'gsap';
 import React from 'react';
 import { useRef, useEffect } from 'react';
 import * as Styled from './styled';
+import { LIGHT_YELLOW } from '../../colorPalette';
+import { UnderLine } from '../UnderLine/UnderLine';
 import KeyboardDoubleArrowDownIcon from '@mui/icons-material/KeyboardDoubleArrowDown';
 export const IntroPage = () => {
   const h1 = useRef(null);
@@ -32,7 +34,12 @@ export const IntroPage = () => {
         <Styled.BodyTextContainer>
           <Styled.BodyText className="one">안녕하세요</Styled.BodyText>
           <Styled.BodyText className="two">프론트엔드 개발자를 희망하는</Styled.BodyText>
-          <Styled.BodyText className="tre">박현우 입니다.</Styled.BodyText>
+          <Styled.BodyText className="tre">
+            <UnderLine color={LIGHT_YELLOW} delay={2.5}>
+              박현우
+            </UnderLine>
+            입니다.
+          </Styled.BodyText>
         </Styled.BodyTextContainer>
         <Styled.BackgrouundImg>
           <img src="/moon.jpg" alt="background" draggable={false} />
