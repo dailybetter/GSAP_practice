@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import reactLogo from './assets/react.svg';
-import { IntroPage } from './components/intro';
+import { Intro } from './components/intro';
 import styled from 'styled-components';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import gsap from 'gsap';
@@ -13,10 +13,11 @@ const Section = styled.section`
 gsap.registerPlugin(ScrollTrigger);
 function App() {
   return (
-    <Section>
-      {/* <IntroPage /> */}
-      <IntroPage />
-    </Section>
+    <>
+      <Section>
+        <Intro />
+      </Section>
+    </>
   );
 }
 

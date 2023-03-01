@@ -4,8 +4,9 @@ import { useRef, useEffect } from 'react';
 import * as Styled from './styled';
 import { LIGHT_YELLOW } from '../../colorPalette';
 import { UnderLine } from '../UnderLine/UnderLine';
+import { MyAppBar } from '../appbar/index';
 import KeyboardDoubleArrowDownIcon from '@mui/icons-material/KeyboardDoubleArrowDown';
-export const IntroPage = () => {
+export const Intro = () => {
   const h1 = useRef(null);
   useEffect(() => {
     gsap
@@ -30,6 +31,7 @@ export const IntroPage = () => {
   }, []);
   return (
     <Styled.Container>
+      <Styled.MainAppBar />
       <Styled.Main>
         <Styled.BodyTextContainer>
           <Styled.BodyText className="one">안녕하세요</Styled.BodyText>
@@ -44,10 +46,10 @@ export const IntroPage = () => {
         <Styled.BackgrouundImg>
           <img src="/moon.jpg" alt="background" draggable={false} />
         </Styled.BackgrouundImg>
+        <Styled.IconContainer>
+          <KeyboardDoubleArrowDownIcon fontSize="large" />
+        </Styled.IconContainer>
       </Styled.Main>
-      <Styled.IconContainer>
-        <KeyboardDoubleArrowDownIcon fontSize="large" />
-      </Styled.IconContainer>
     </Styled.Container>
   );
 };

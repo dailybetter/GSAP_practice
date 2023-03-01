@@ -1,5 +1,4 @@
 import gsap from 'gsap';
-import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import React, { ReactChild, ReactChildren, useEffect, useRef } from 'react';
 import styled from 'styled-components';
 

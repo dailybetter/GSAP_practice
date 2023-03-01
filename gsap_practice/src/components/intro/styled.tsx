@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { MyAppBar } from '../appbar';
 import KeyboardDoubleArrowDownIcon from '@mui/icons-material/KeyboardDoubleArrowDown';
 export const Container = styled.section`
   display: flex;
@@ -8,39 +9,40 @@ export const Container = styled.section`
   background-color: #202224;
   color: white;
 
-  //   @media ${(props) => props.theme.tablet} {
-  //     flex-direction: column;
-  //     height: 150vh;
-  //   }
+  @media ${(props) => props.theme.tablet} {
+    position: relative;
+    flex-direction: column;
+    height: 100vh;
+  }
 `;
 
-export const Main = styled.article`
+export const Main = styled.div`
   display: flex;
   position: relative;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   width: 100vw;
-  height: 100%;
+  height: 100vh;
 
-  //   @media ${(props) => props.theme.tablet} {
-  //     width: 100vw;
-  //     height: 200vh;
-  //   }
+  @media ${(props) => props.theme.tablet} {
+    width: 100vw;
+    height: 100vh;
+  }
 
-  //   @media ${(props) => props.theme.mobile} {
-  //     width: 100vw;
-  //     height: 200vh;
-  //   }
+  @media ${(props) => props.theme.mobile} {
+    width: 100vw;
+    height: 100vh;
+  }
 `;
 export const BackgrouundImg = styled.div`
-  // position: fixed;
+  position: fixed;
   top: 0;
   width: 100vw;
   text-align: center;
-  opacity: 0.4;
   img {
-    width: 80vw;
+    opacity: 0.4;
+    width: 100vw;
     height: 100vh;
     object-fit: cover;
     z-index: -1;
@@ -54,7 +56,6 @@ export const BodyTextContainer = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: baseline;
-  opacity: 1;
   z-index: 1;
 `;
 export const BodyTextDiv = styled.div`
@@ -67,16 +68,16 @@ export const BodyText = styled.div`
   flex
   opacity: 1;
   margin-left: 50vw;
-`;
-
-export const ArrowDown = styled(KeyboardDoubleArrowDownIcon)`
-  position: absolute;
-  right: 0;
-  bottom: 0;
-`;
+  `;
 
 export const IconContainer = styled.div`
   position: absolute;
   right: 3vw;
   bottom: 2vw;
+  opacity: 1;
+`;
+
+export const MainAppBar = styled(MyAppBar)`
+  position: absolute;
+  z-index: 2;
 `;
