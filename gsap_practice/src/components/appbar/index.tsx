@@ -6,9 +6,6 @@ import Divider from '@mui/material/Divider';
 import Drawer from '@mui/material/Drawer';
 import IconButton from '@mui/material/IconButton';
 import List from '@mui/material/List';
-import ListItem from '@mui/material/ListItem';
-import ListItemButton from '@mui/material/ListItemButton';
-import ListItemText from '@mui/material/ListItemText';
 import MenuIcon from '@mui/icons-material/Menu';
 import Toolbar from '@mui/material/Toolbar';
 import Typography from '@mui/material/Typography';
@@ -32,7 +29,7 @@ export const MyAppBar = (props: Props) => {
 
   const drawer = (
     <Box onClick={handleDrawerToggle} sx={{ textAlign: 'center' }}>
-      <Typography variant="h6" sx={{ my: 2 }}>
+      <Typography variant="h1" sx={{ fontFamily: 'SpoqaHanSans', my: 2 }}>
         FE개발자 박현우
       </Typography>
       <Divider />
@@ -87,7 +84,11 @@ export const MyAppBar = (props: Props) => {
           <Typography
             variant="h6"
             component="div"
-            sx={{ flexGrow: 1, display: { xs: 'none', sm: 'block' } }}
+            sx={{
+              fontFamily: 'SpoqaHanSans',
+              flexGrow: 1,
+              display: { xs: 'none', sm: 'block' },
+            }}
           >
             FE개발자 박현우
           </Typography>
