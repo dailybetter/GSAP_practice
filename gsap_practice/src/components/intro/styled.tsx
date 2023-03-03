@@ -68,6 +68,8 @@ export const BodyText = styled.div`
   flex
   opacity: 1;
   margin-left: 50vw;
+  font-family: 'SpoqaHanSans', sans-serif;
+
   `;
 
 export const IconContainer = styled.div`

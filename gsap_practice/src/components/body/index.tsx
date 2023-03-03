@@ -1,3 +1,10 @@
-export const AboutMe = () => {
-  return <h1>AboutMe</h1>;
+import * as Styled from './styled';
+
+
+export const Body = () => {
+  return(
+    <Styled.Container>
+      
+    </Styled.Container>
+  )
 };

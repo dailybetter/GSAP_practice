@@ -30,7 +30,7 @@ export const MyAppBar = (props: Props) => {
   const drawer = (
     <Box onClick={handleDrawerToggle} sx={{ textAlign: 'center' }}>
       <Typography variant="h1" sx={{ fontFamily: 'SpoqaHanSans', my: 2 }}>
-        FE개발자 박현우
+        개발자 박현우
       </Typography>
       <Divider />
       <List>
@@ -82,7 +82,7 @@ export const MyAppBar = (props: Props) => {
             <MenuIcon />
           </IconButton>
           <Typography
-            variant="h6"
+            variant="h5"
             component="div"
             sx={{
               fontFamily: 'SpoqaHanSans',
@@ -90,7 +90,7 @@ export const MyAppBar = (props: Props) => {
               display: { xs: 'none', sm: 'block' },
             }}
           >
-            FE개발자 박현우
+            개발자 박현우
           </Typography>
           <Box sx={{ display: { xs: 'none', sm: 'block' } }}>
             <Styled.MyLink

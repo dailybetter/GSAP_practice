@@ -15,3 +15,9 @@ export const MyLink = styled(Link)`
 
   transition: 0.3s ease;
 `;
+
+export const Text = styled.span`
+  font-family: 'SpoqaHanSans', sans-serif;
+  font-weight: bold;
+  font-size: 20px;
+`;
