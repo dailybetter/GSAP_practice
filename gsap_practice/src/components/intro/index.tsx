@@ -3,7 +3,7 @@ import React from 'react';
 import { useRef, useEffect } from 'react';
 import * as Styled from './styled';
 import { LIGHT_GREEN } from '../../colorPalette';
-import { UnderLine } from '../UnderLine/UnderLine';
+import { UnderLine } from '../gsap/UnderLine';
 import KeyboardDoubleArrowDownIcon from '@mui/icons-material/KeyboardDoubleArrowDown';
 export const Intro = () => {
   const h1 = useRef(null);

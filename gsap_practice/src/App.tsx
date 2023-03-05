@@ -15,7 +15,9 @@ const Section = styled.section`
   flex-direction: column;
 `;
 
-gsap.registerPlugin(ScrollTrigger);
+if (typeof window !== 'undefined') {
+  gsap.registerPlugin(ScrollTrigger);
+}
 function App() {
   return (
     <>
