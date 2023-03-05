@@ -16,14 +16,14 @@ export const Container = styled.section`
   }
 `;
 
-export const Main = styled.div`
+export const Main = styled.article`
   display: flex;
   position: relative;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   width: 100vw;
-  height: 100vh;
+  height: 100%;
 
   @media ${(props) => props.theme.tablet} {
     width: 100vw;
@@ -36,7 +36,7 @@ export const Main = styled.div`
   }
 `;
 export const BackgrouundImg = styled.div`
-  position: fixed;
+  position: absolute;
   top: 0;
   width: 100vw;
   text-align: center;
@@ -45,7 +45,6 @@ export const BackgrouundImg = styled.div`
     width: 100vw;
     height: 100vh;
     object-fit: cover;
-    z-index: -1;
   }
 `;
 
@@ -69,7 +68,6 @@ export const BodyText = styled.div`
   opacity: 1;
   margin-left: 50vw;
   font-family: 'SpoqaHanSans', sans-serif;
-
   `;
 
 export const IconContainer = styled.div`

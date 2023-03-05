@@ -2,9 +2,8 @@ import gsap from 'gsap';
 import React from 'react';
 import { useRef, useEffect } from 'react';
 import * as Styled from './styled';
-import { LIGHT_YELLOW, LIGHT_GREEN } from '../../colorPalette';
+import { LIGHT_GREEN } from '../../colorPalette';
 import { UnderLine } from '../UnderLine/UnderLine';
-import { MyAppBar } from '../appbar/index';
 import KeyboardDoubleArrowDownIcon from '@mui/icons-material/KeyboardDoubleArrowDown';
 export const Intro = () => {
   const h1 = useRef(null);
@@ -31,8 +30,8 @@ export const Intro = () => {
   }, []);
   return (
     <Styled.Container>
-      <Styled.MainAppBar />
       <Styled.Main>
+        <Styled.MainAppBar />
         <Styled.BodyTextContainer>
           <Styled.BodyText className="one">안녕하세요</Styled.BodyText>
           <Styled.BodyText className="two">프론트엔드 개발자를 희망하는</Styled.BodyText>

@@ -6,7 +6,8 @@
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "eslint": "eslint ./src --ext .ts,.tsx,.js,.jsx --cache"
   },
   "dependencies": {
     "@emotion/react": "^11.10.6",

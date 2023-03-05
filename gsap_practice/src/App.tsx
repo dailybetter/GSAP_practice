@@ -8,27 +8,22 @@ import './index.css';
 import { createTheme } from '@mui/material/styles';
 import { ThemeProvider } from '@mui/material/styles';
 import { CssBaseline } from '@mui/material';
+import { Body } from './components/body';
 const Section = styled.section`
   position: relative;
   display: flex;
   flex-direction: column;
 `;
 
-const theme = createTheme({
-  typography: {
-    // fontFamily: `'SpoqaHanSans', sans-serif'`,
-  },
-});
 gsap.registerPlugin(ScrollTrigger);
 function App() {
   return (
     <>
-      <ThemeProvider theme={theme}>
-        <CssBaseline />
-        <Section>
-          <Intro />
-        </Section>
-      </ThemeProvider>
+      {/* <CssBaseline /> */}
+      <Section>
+        <Intro />
+        <Body />
+      </Section>
     </>
   );
 }
