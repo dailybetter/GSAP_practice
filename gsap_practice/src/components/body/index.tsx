@@ -4,7 +4,9 @@ import { BodyTitle } from './common/BodyTitle';
 export const Body = () => {
   return (
     <Styled.Container>
-      <BodyTitle title="Introduce" />
+      <Styled.Contents>
+        <BodyTitle title="Introduce" />
+      </Styled.Contents>
     </Styled.Container>
   );
 };
