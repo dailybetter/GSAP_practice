@@ -2,7 +2,7 @@ import gsap from 'gsap';
 import React, { useEffect, useRef } from 'react';
 import styled from 'styled-components';
 import { FadeInContent } from './FadeinContent';
-
+import { BodyTitle } from '../body/common/BodyTitle';
 interface TextProps {
   children?: React.ReactNode;
   delay: number;
@@ -51,15 +51,15 @@ export const UnderLine = ({ delay, children, color }: UnderlineProps) => {
 };
 
 interface FadeInContentWithUnderlineProps {
-  children?: React.ReactNode;
-  delay?: number;
-  color?: string;
+  children: string;
+  delay: number;
+  color: string;
 }
 
 export const FadeInUnderLine = ({
   children,
-  delay = 0,
-  color = '#000',
+  delay,
+  color,
 }: FadeInContentWithUnderlineProps) => {
   const target = useRef<HTMLDivElement>(null);
   useEffect(() => {
@@ -73,7 +73,7 @@ export const FadeInUnderLine = ({
         },
         opacity: 1,
         delay,
-        duration: 0.5,
+        duration: 1.5,
         ease: 'power3.out',
       },
     );
@@ -82,7 +82,7 @@ export const FadeInUnderLine = ({
   return (
     <div ref={target}>
       <UnderLine delay={delay + 1} color={color}>
-        {children}
+        <BodyTitle title={children} />
       </UnderLine>
     </div>
   );

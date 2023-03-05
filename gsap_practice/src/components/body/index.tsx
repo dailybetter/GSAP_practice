@@ -9,9 +9,6 @@ export const Body = () => {
       <Styled.Contents>
         <FadeInContent delay={0.3}>Introduce2</FadeInContent>
         <FadeInUnderLine delay={1} color={LIGHT_GREEN}>
-          <BodyTitle title="Introduce" />
-        </FadeInUnderLine>
-        <FadeInUnderLine delay={1} color={LIGHT_GREEN}>
           Introduce2
         </FadeInUnderLine>
       </Styled.Contents>
