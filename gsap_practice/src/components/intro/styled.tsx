@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 import { MyAppBar } from '../appbar';
+import { LIGHT_GREEN } from '../../colorPalette';
 import KeyboardDoubleArrowDownIcon from '@mui/icons-material/KeyboardDoubleArrowDown';
 export const Container = styled.section`
   display: flex;
@@ -81,4 +82,12 @@ export const IconContainer = styled.div`
 export const MainAppBar = styled(MyAppBar)`
   position: absolute;
   z-index: 2;
+`;
+
+export const ArrowDownButton = styled(KeyboardDoubleArrowDownIcon)`
+  &:hover {
+    color: ${LIGHT_GREEN};
+    cursor: pointer;
+    transition: 1s;
+  }
 `;

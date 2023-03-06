@@ -28,6 +28,9 @@ export const Intro = () => {
         '-=0.3',
       );
   }, []);
+  const handleClick = () => {
+    window.scrollTo({ top: window.innerHeight, behavior: 'smooth' });
+  };
   return (
     <Styled.Container>
       <Styled.Main>
@@ -46,7 +49,7 @@ export const Intro = () => {
           <img src="/moon.jpg" alt="background" draggable={false} />
         </Styled.BackgrouundImg>
         <Styled.IconContainer>
-          <KeyboardDoubleArrowDownIcon fontSize="large" />
+          <Styled.ArrowDownButton fontSize="large" onClick={handleClick} />
         </Styled.IconContainer>
       </Styled.Main>
     </Styled.Container>
