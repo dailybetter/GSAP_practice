@@ -1,7 +1,5 @@
 import * as Styled from './styled';
-import { BodyTitle } from './common/BodyTitle';
 import { FadeInContent } from '../gsap/FadeinContent';
-import { FadeInUnderline } from '../gsap/FadeinUnderLine';
 import { LIGHT_GREEN } from '../../colorPalette';
 import { UnderLine } from '../gsap/UnderLine';
 export const Body = () => {

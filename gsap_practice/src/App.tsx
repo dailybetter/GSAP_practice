@@ -5,10 +5,16 @@ import styled from 'styled-components';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import gsap from 'gsap';
 import './index.css';
-import { createTheme } from '@mui/material/styles';
-import { ThemeProvider } from '@mui/material/styles';
-import { CssBaseline } from '@mui/material';
 import { Body } from './components/body';
+import { createGlobalStyle } from 'styled-components';
+const GlobalStyle = createGlobalStyle`
+  @font-face {
+    font-family: 'SpoqaBold';
+    src: url('public\fonts\SpoqaHanSansNeo-Bold.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+  }
+`;
 const Section = styled.section`
   position: relative;
   display: flex;
@@ -21,7 +27,7 @@ if (typeof window !== 'undefined') {
 function App() {
   return (
     <>
-      {/* <CssBaseline /> */}
+      <GlobalStyle />
       <Section>
         <Intro />
         <Body />

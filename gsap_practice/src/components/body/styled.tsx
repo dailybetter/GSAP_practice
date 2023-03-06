@@ -17,6 +17,7 @@ export const Contents = styled.article`
 
 export const StyledBodyTitle = styled.div`
   font-size: 70px;
-  font-family: 'SpoqaHanSans', sans-serif;
+  font-family: 'SpoqaBold';
+  font-weight: bold;
   margin: 0;
 `;

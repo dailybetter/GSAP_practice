@@ -67,7 +67,8 @@ export const BodyText = styled.div`
   flex
   opacity: 1;
   margin-left: 50vw;
-  font-family: 'SpoqaHanSans', sans-serif;
+  font-family: 'SpoqaBold', sans-serif;
+  font-weight: bold;
   `;
 
 export const IconContainer = styled.div`
