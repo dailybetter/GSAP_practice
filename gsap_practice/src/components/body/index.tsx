@@ -1,16 +1,20 @@
 import * as Styled from './styled';
 import { BodyTitle } from './common/BodyTitle';
 import { FadeInContent } from '../gsap/FadeinContent';
-import { FadeInUnderLine } from '../gsap/FadeinUnderLine';
+import { FadeInUnderline } from '../gsap/FadeinUnderLine';
 import { LIGHT_GREEN } from '../../colorPalette';
+import { UnderLine } from '../gsap/UnderLine';
 export const Body = () => {
   return (
     <Styled.Container>
       <Styled.Contents>
-        <FadeInContent delay={0.3}>Introduce2</FadeInContent>
-        <FadeInUnderLine delay={1} color={LIGHT_GREEN}>
-          Introduce2
-        </FadeInUnderLine>
+        <Styled.StyledBodyTitle>
+          <FadeInContent delay={1}>
+            <UnderLine color={LIGHT_GREEN} delay={1}>
+              Introduce
+            </UnderLine>
+          </FadeInContent>
+        </Styled.StyledBodyTitle>
       </Styled.Contents>
     </Styled.Container>
   );

@@ -14,3 +14,9 @@ export const Contents = styled.article`
   padding: 40px;
   color: black;
 `;
+
+export const StyledBodyTitle = styled.div`
+  font-size: 70px;
+  font-family: 'SpoqaHanSans', sans-serif;
+  margin: 0;
+`;

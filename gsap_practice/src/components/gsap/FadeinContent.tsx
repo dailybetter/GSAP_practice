@@ -1,5 +1,5 @@
 import gsap from 'gsap';
-import React, { ReactChild, ReactChildren, useEffect, useRef } from 'react';
+import React, { useEffect, useRef } from 'react';
 
 interface TextProps {
   children?: React.ReactNode;
@@ -15,7 +15,7 @@ export const FadeInContent = ({ children, delay }: TextProps) => {
       {
         scrollTrigger: {
           trigger: target.current,
-          toggleActions: 'restart none none none',
+          toggleActions: 'play none none none',
         },
         opacity: 1,
         delay: 0.3,
