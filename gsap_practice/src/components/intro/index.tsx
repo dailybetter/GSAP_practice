@@ -49,7 +49,11 @@ export const Intro = () => {
           <img src="/moon.jpg" alt="background" draggable={false} />
         </Styled.BackgrouundImg>
         <Styled.IconContainer>
-          <Styled.ArrowDownButton fontSize="large" onClick={viewportDown} />
+          <Styled.ArrowDownButton
+            fontSize="large"
+            onClick={viewportDown}
+            style={{ fontSize: '3rem' }}
+          />
         </Styled.IconContainer>
       </Styled.Main>
     </Styled.Container>
