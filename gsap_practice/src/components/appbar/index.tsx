@@ -69,7 +69,12 @@ export const MyAppBar = (props: Props) => {
       <CssBaseline />
       <AppBar
         component="nav"
-        sx={{ zIndex: 'tooltip', backgroundColor: 'transparent', boxShadow: 'none' }}
+        sx={{
+          position: 'absolute',
+          zIndex: 'tooltip',
+          backgroundColor: 'transparent',
+          boxShadow: 'none',
+        }}
       >
         <Toolbar>
           <IconButton
