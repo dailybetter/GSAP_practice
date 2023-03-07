@@ -20,4 +20,24 @@ export const StyledBodyTitle = styled.div`
   font-family: 'SpoqaBold';
   font-weight: bold;
   margin: 0;
+  column-gap: 20px;
+`;
+
+export const BodyContent = styled.div`
+  font-size: 30px;
+  font-family: 'SpoqaMedium';
+  font-weight: normal;
+`;
+
+export const Card = styled.article`
+  display: flex;
+  flex-direction: column;
+  row-gap: 25px;
+  position: relative;
+`;
+export const CardContentArea = styled.article`
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  padding: 0, 10vw;
 `;

@@ -10,7 +10,13 @@ import { createGlobalStyle } from 'styled-components';
 const GlobalStyle = createGlobalStyle`
   @font-face {
     font-family: 'SpoqaBold';
-    src: url('public\fonts\SpoqaHanSansNeo-Bold.otf') format('opentype');
+    src: url('/fonts/SpoqaHanSansNeo-Bold.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: 'SpoqaMedium';
+    src: url('/fonts/SpoqaHanSansNeo-Medium.otf') format('opentype');
     font-weight: normal;
     font-style: normal;
   }

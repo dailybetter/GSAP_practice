@@ -73,16 +73,3 @@ button:focus-visible {
   src: url('../public/fonts/SpoqaHanSansNeo-Medium.otf') format('otf');
   font-weight: normal;
 }
-@font-face {
-  font-family: 'SpoqaBold', sans-serif;
-  src: url('../public/fonts/SpoqaHanSansNeo-Bold.otf') format('otf');
-  font-weight: bold;
-}
-
-@font-face {
-  font-family: 'NEXON Lv2 Gothic Bold';
-  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@2.1/NEXON Lv2 Gothic Bold.woff')
-    format('woff');
-  font-weight: normal;
-  font-style: normal;
-}
