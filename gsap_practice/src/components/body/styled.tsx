@@ -64,6 +64,17 @@ export const CardContentPeriod = styled.span`
   font-family: 'SpoqaThin';
 `;
 
+export const CardExplainContainer = styled.article`
+  display: flex;
+  flex-direction: column;
+  row-gap: 7px;
+  margin-top: 30px;
+`;
+
+export const CardExPlain = styled.div`
+  font-family: 'SpoqaMedium';
+  font-size: 24px;
+`;
 export const Divider = styled.div`
   height: 6.5px;
   margin-top: 30px;
