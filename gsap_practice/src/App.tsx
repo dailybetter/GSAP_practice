@@ -20,6 +20,12 @@ const GlobalStyle = createGlobalStyle`
     font-weight: normal;
     font-style: normal;
   }
+  @font-face {
+    font-family: 'SpoqaThin';
+    src: url('/fonts/SpoqaHanSansNeo-Thin.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+  }
 `;
 const Section = styled.section`
   position: relative;

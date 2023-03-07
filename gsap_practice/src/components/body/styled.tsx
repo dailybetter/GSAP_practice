@@ -59,6 +59,10 @@ export const CardContentTitle = styled.span`
     font-size: 45px;
   }
 `;
+export const CardContentPeriod = styled.span`
+  font-size: 18px;
+  font-family: 'SpoqaThin';
+`;
 
 export const Divider = styled.div`
   height: 6.5px;
