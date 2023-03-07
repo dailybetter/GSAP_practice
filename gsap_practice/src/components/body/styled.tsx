@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-
+import { DARK_GREEN } from '../..//colorPalette';
 export const Container = styled.section`
   display: flex;
   position: relative;
@@ -51,11 +51,18 @@ export const CardTitleArea = styled.article`
 `;
 
 export const CardContentTitle = styled.span`
-  font-size: 40px;
+  font-size: 45px;
   font-family: 'SpoqaMedium';
 
   @media ${(props) => props.theme.mobile} {
     font-family: 'SpoqaBold';
-    font-size: 35px;
+    font-size: 45px;
   }
+`;
+
+export const Divider = styled.div`
+  height: 6.5px;
+  margin-top: 30px;
+  background-color: ${DARK_GREEN};
+  width: 90vw;
 `;

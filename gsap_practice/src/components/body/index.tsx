@@ -23,6 +23,7 @@ export const Body = () => {
             </Styled.CardContentArea>
           </FadeInUp>
         </Styled.Card>
+        <Styled.Divider></Styled.Divider>
         <Styled.Card>
           <Styled.StyledBodyTitle>
             <FadeInContent delay={1}>

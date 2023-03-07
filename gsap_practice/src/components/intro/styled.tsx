@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 import { MyAppBar } from '../appbar';
-import { LIGHT_GREEN } from '../../colorPalette';
+import { LIGHT_GREEN, DARK_GREEN } from '../../colorPalette';
 import KeyboardDoubleArrowDownIcon from '@mui/icons-material/KeyboardDoubleArrowDown';
 export const Container = styled.section`
   display: flex;
@@ -89,5 +89,23 @@ export const ArrowDownButton = styled(KeyboardDoubleArrowDownIcon)`
     color: ${LIGHT_GREEN};
     cursor: pointer;
     transition: 1s;
+  }
+`;
+
+export const Divider = styled.div`
+  height: 6.5px;
+  margin-top: 30px;
+  background-color: ${DARK_GREEN};
+
+  @media ${(props) => props.theme.desktop} {
+    width: 60vw;
+  }
+
+  @media ${(props) => props.theme.tablet} {
+    width: 90vw;
+  }
+
+  @media ${(props) => props.theme.mobile} {
+    width: 80vw;
   }
 `;
