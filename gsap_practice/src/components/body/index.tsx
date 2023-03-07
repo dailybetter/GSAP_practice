@@ -3,6 +3,7 @@ import { FadeInContent } from '../gsap/FadeinContent';
 import { LIGHT_GREEN } from '../../colorPalette';
 import { UnderLine } from '../gsap/UnderLine';
 import { IntroContents } from './contents/IntroContents';
+import { FadeInUp } from '../gsap/FadeinUp';
 export const Body = () => {
   return (
     <Styled.Container>
@@ -15,9 +16,25 @@ export const Body = () => {
               </UnderLine>
             </FadeInContent>
           </Styled.StyledBodyTitle>
-          <Styled.CardContentArea>
-            <IntroContents />
-          </Styled.CardContentArea>
+          <FadeInUp delay={0.3}>
+            <Styled.CardContentArea>
+              <IntroContents />
+            </Styled.CardContentArea>
+          </FadeInUp>
+        </Styled.Card>
+        <Styled.Card>
+          <Styled.StyledBodyTitle>
+            <FadeInContent delay={1}>
+              <UnderLine color={LIGHT_GREEN} delay={1}>
+                Project
+              </UnderLine>
+            </FadeInContent>
+          </Styled.StyledBodyTitle>
+          <FadeInUp delay={0.3}>
+            <Styled.CardContentArea>
+              <IntroContents />
+            </Styled.CardContentArea>
+          </FadeInUp>
         </Styled.Card>
       </Styled.Contents>
     </Styled.Container>

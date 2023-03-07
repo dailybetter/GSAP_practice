@@ -34,10 +34,11 @@ export const Card = styled.article`
   flex-direction: column;
   row-gap: 25px;
   position: relative;
+  padding: 10vh 0px 0px 0px;
 `;
 export const CardContentArea = styled.article`
   display: flex;
   flex-direction: column;
   position: relative;
-  padding: 0, 10vw;
+  padding: 5vh 0px 0px 10vw;
 `;
