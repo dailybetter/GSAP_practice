@@ -41,13 +41,17 @@ export const ImgWrapper = styled.div`
   height: auto;
   img {
     width: 30vw;
-    max-width: 300px;
+    max-width: 338px;
   }
 `;
 export const BodyContent = styled.div`
   font-size: 30px;
   font-family: 'SpoqaMedium';
   font-weight: normal;
+  @media ${(props) => props.theme.mobile} {
+    font-family: 'SpoqaThin';
+    font-size: 16px;
+  }
 `;
 
 export const Card = styled.article`

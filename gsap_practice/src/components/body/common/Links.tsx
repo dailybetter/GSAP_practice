@@ -29,7 +29,7 @@ export const Links = ({ text, href }: LinkProps) => {
     return (
       <p style={{ margin: 0 }}>
         <LinkText href={href} target="_blank">
-          <GitHubIcon /> {text}
+          <GitHubIcon style={{ marginBottom: '-4px' }} /> {text}
         </LinkText>
       </p>
     );
@@ -37,7 +37,7 @@ export const Links = ({ text, href }: LinkProps) => {
   return (
     <p style={{ margin: 0 }}>
       <LinkText href={href} target="_blank">
-        <LinkIcon /> {text}
+        <LinkIcon style={{ marginBottom: '-4px' }} /> {text}
       </LinkText>
     </p>
   );
