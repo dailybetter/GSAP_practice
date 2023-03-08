@@ -72,8 +72,13 @@ export const CardExplainContainer = styled.article`
 `;
 
 export const CardExPlain = styled.div`
+  font-family: 'SpoqaThin';
+  font-size: 20px;
+`;
+export const CardMediumTitle = styled.div`
   font-family: 'SpoqaMedium';
-  font-size: 24px;
+  font-size: 30px;
+  margin: 10px 0px;
 `;
 export const Divider = styled.div`
   height: 6.5px;

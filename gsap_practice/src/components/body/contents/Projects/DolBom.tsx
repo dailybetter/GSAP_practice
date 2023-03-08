@@ -8,6 +8,7 @@ export const DolBom = () => {
       <Styled.CardExplainContainer>
         <Styled.CardExPlain>✔ 상담사를 위한 비대면 상담플랫폼 개발</Styled.CardExPlain>
         <Styled.CardExPlain>✔ 캘린더 기능과 드라이브 기능 개발 담당</Styled.CardExPlain>
+        <Styled.CardMediumTitle>Links</Styled.CardMediumTitle>
         <Links
           text="돌봄 프로젝트 GitHub"
           href="https://github.com/dailybetter/DOLBOMpjt"

@@ -12,8 +12,8 @@ const LinkText = styled.a`
   background: linear-gradient(to right, transparent 50%, rgb(130, 205, 71) 50%);
   background-size: 200%;
   background-position: 0 0;
-  font-family: 'SpoqaMedium';
-  font-size: 24px;
+  font-family: 'SpoqaThin';
+  font-size: 20px;
   color: Black;
   text-decoration: underline;
   text-underline-offset: 3.5px;
