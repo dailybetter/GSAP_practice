@@ -27,18 +27,18 @@ const LinkText = styled.a`
 export const Links = ({ text, href }: LinkProps) => {
   if (text.includes('GitHub')) {
     return (
-      <>
+      <p style={{ margin: 0 }}>
         <LinkText href={href} target="_blank">
           <GitHubIcon /> {text}
         </LinkText>
-      </>
+      </p>
     );
   }
   return (
-    <>
+    <p style={{ margin: 0 }}>
       <LinkText href={href} target="_blank">
         <LinkIcon /> {text}
       </LinkText>
-    </>
+    </p>
   );
 };
