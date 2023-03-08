@@ -1,6 +1,5 @@
 import * as Styled from '../../styled';
 import { Links } from '../../common/Links';
-import GitHubIcon from '@mui/icons-material/GitHub';
 export const DolBom = () => {
   return (
     <>

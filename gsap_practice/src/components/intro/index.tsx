@@ -6,27 +6,13 @@ import { LIGHT_GREEN } from '../../colorPalette';
 import { UnderLine } from '../gsap/UnderLine';
 import KeyboardDoubleArrowDownIcon from '@mui/icons-material/KeyboardDoubleArrowDown';
 export const Intro = () => {
-  const h1 = useRef(null);
   useEffect(() => {
+    gsap.defaults({ duration: 1 });
     gsap
       .timeline()
-      .fromTo(
-        '.one',
-        { duration: 1, opacity: 0, y: 0 },
-        { duration: 1, opacity: 1, y: 50 },
-      )
-      .fromTo(
-        '.two',
-        { duration: 1, opacity: 0, y: 0 },
-        { duration: 1, opacity: 1, y: 50 },
-        '-=0.3',
-      )
-      .fromTo(
-        '.tre',
-        { duration: 1, opacity: 0, y: 0 },
-        { duration: 1, opacity: 1, y: 50 },
-        '-=0.3',
-      );
+      .fromTo('.one', { opacity: 0, y: 0 }, { opacity: 1, y: 50 })
+      .fromTo('.two', { opacity: 0, y: 0 }, { opacity: 1, y: 50 }, '-=0.3')
+      .fromTo('.tre', { opacity: 0, y: 0 }, { opacity: 1, y: 50 }, '-=0.3');
   }, []);
   const viewportDown = () => {
     window.scrollTo({ top: window.innerHeight, behavior: 'smooth' });

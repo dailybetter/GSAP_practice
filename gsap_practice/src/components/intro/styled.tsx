@@ -91,21 +91,3 @@ export const ArrowDownButton = styled(KeyboardDoubleArrowDownIcon)`
     transition: 1s;
   }
 `;
-
-export const Divider = styled.div`
-  height: 6.5px;
-  margin-top: 30px;
-  background-color: ${DARK_GREEN};
-
-  @media ${(props) => props.theme.desktop} {
-    width: 60vw;
-  }
-
-  @media ${(props) => props.theme.tablet} {
-    width: 90vw;
-  }
-
-  @media ${(props) => props.theme.mobile} {
-    width: 80vw;
-  }
-`;

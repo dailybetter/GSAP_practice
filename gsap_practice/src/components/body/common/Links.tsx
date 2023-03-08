@@ -1,6 +1,8 @@
 import styled from 'styled-components';
 import React from 'react';
 import LinkIcon from '@mui/icons-material/Link';
+import GitHubIcon from '@mui/icons-material/GitHub';
+
 interface LinkProps {
   text: string;
   href: string;
@@ -13,6 +15,7 @@ const LinkText = styled.a`
   font-family: 'SpoqaMedium';
   font-size: 24px;
   color: Black;
+  text-decoration: underline;
   text-underline-offset: 3.5px;
   transition: 0.25s ease;
 
@@ -22,6 +25,15 @@ const LinkText = styled.a`
   }
 `;
 export const Links = ({ text, href }: LinkProps) => {
+  if (text.includes('GitHub')) {
+    return (
+      <>
+        <LinkText href={href} target="_blank">
+          <GitHubIcon /> {text}
+        </LinkText>
+      </>
+    );
+  }
   return (
     <>
       <LinkText href={href} target="_blank">
