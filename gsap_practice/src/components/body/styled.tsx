@@ -11,8 +11,18 @@ export const Contents = styled.article`
   display: flex;
   flex-direction: column;
   width: 80vw;
+  margin: 0vh 10vh;
   padding: 40px;
   color: black;
+  justify-content: center;
+  @media ${(props) => props.theme.tablet} {
+    width: 80vw;
+    margin: 0;
+  }
+  @media ${(props) => props.theme.mobile} {
+    width: 80vw;
+    margin: 0;
+  }
 `;
 
 export const StyledBodyTitle = styled.div`

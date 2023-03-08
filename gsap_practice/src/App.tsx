@@ -1,5 +1,3 @@
-import { useState } from 'react';
-import reactLogo from './assets/react.svg';
 import { Intro } from './components/intro';
 import styled from 'styled-components';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
@@ -7,6 +5,9 @@ import gsap from 'gsap';
 import './index.css';
 import { Body } from './components/body';
 import { createGlobalStyle } from 'styled-components';
+import { ThemeProvider } from 'styled-components';
+import { theme } from './theme';
+
 const GlobalStyle = createGlobalStyle`
   @font-face {
     font-family: 'SpoqaBold';
@@ -38,13 +39,13 @@ if (typeof window !== 'undefined') {
 }
 function App() {
   return (
-    <>
+    <ThemeProvider theme={theme}>
       <GlobalStyle />
       <Section>
         <Intro />
         <Body />
       </Section>
-    </>
+    </ThemeProvider>
   );
 }
 
