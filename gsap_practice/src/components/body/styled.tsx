@@ -33,6 +33,17 @@ export const StyledBodyTitle = styled.div`
   column-gap: 20px;
 `;
 
+export const IntroContainer = styled.article`
+  display: flex;
+  flex-direction: row;
+`;
+export const ImgWrapper = styled.div`
+  height: auto;
+  img {
+    width: 30vw;
+    max-width: 300px;
+  }
+`;
 export const BodyContent = styled.div`
   font-size: 30px;
   font-family: 'SpoqaMedium';

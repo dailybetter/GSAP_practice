@@ -21,9 +21,14 @@ export const Body = () => {
             </FadeInContent>
           </Styled.StyledBodyTitle>
           <FadeInUp delay={0.3}>
-            <Styled.CardContentArea>
-              <IntroContents />
-            </Styled.CardContentArea>
+            <Styled.IntroContainer>
+              <Styled.ImgWrapper>
+                <img src="public\profile.jpg" alt="Myprofile" />
+              </Styled.ImgWrapper>
+              <Styled.CardContentArea>
+                <IntroContents />
+              </Styled.CardContentArea>
+            </Styled.IntroContainer>
           </FadeInUp>
         </Styled.Card>
         <Styled.Divider />
