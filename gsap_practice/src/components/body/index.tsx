@@ -7,6 +7,7 @@ import { DolBom } from './contents/Projects/DolBom';
 import { MyPortfolio } from './contents/Projects/PortFolio';
 import { FadeInUp } from '../gsap/FadeinUp';
 import { Ssafy } from './contents/Educations/Ssafy';
+import { Wanted } from './contents/Educations/Wanted';
 export const Body = () => {
   return (
     <Styled.Container>
@@ -64,7 +65,7 @@ export const Body = () => {
           </FadeInUp>
           <FadeInUp delay={0.3}>
             <Styled.CardTitleArea>
-              <MyPortfolio />
+              <Wanted />
             </Styled.CardTitleArea>
             <Styled.CardContentArea></Styled.CardContentArea>
           </FadeInUp>
