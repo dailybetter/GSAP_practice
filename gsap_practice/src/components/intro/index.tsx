@@ -32,7 +32,7 @@ export const Intro = () => {
           </Styled.BodyText>
         </Styled.BodyTextContainer>
         <Styled.BackgrouundImg>
-          <img src="/moon.jpg" alt="background" draggable={false} />
+          <img src="/main.jpg" alt="background" draggable={false} />
         </Styled.BackgrouundImg>
         <Styled.IconContainer>
           <Styled.ArrowDownButton

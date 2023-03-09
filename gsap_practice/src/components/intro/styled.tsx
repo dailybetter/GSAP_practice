@@ -43,9 +43,18 @@ export const BackgrouundImg = styled.div`
   text-align: center;
   img {
     opacity: 0.4;
-    width: 100vw;
+    width: 80vw;
     height: 100vh;
     object-fit: cover;
+  }
+  @media ${(props) => props.theme.tablet} {
+    position: absolute;
+    left: 0;
+    img {
+      width: 100vw;
+      height: 100vh;
+      object-fit: cover;
+    }
   }
 `;
 
