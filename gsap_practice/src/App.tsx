@@ -22,6 +22,12 @@ const GlobalStyle = createGlobalStyle`
     font-style: normal;
   }
   @font-face {
+    font-family: 'SpoqaRegular';
+    src: url('/fonts/SpoqaHanSansNeo-Regular.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+  }
+  @font-face {
     font-family: 'SpoqaThin';
     src: url('/fonts/SpoqaHanSansNeo-Thin.otf') format('opentype');
     font-weight: normal;

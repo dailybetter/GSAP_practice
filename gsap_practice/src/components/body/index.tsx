@@ -23,7 +23,7 @@ export const Body = () => {
           <FadeInUp delay={0.3}>
             <Styled.IntroContainer>
               <Styled.ImgWrapper>
-                <img src="public\profile.jpg" alt="Myprofile" />
+                <img src="/profile.jpg" alt="Myprofile" />
               </Styled.ImgWrapper>
               <Styled.CardContentArea>
                 <IntroContents />

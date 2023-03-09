@@ -97,7 +97,7 @@ export const CardExplainContainer = styled.article`
 `;
 
 export const CardExPlain = styled.div`
-  font-family: 'SpoqaThin';
+  font-family: 'SpoqaRegular';
   font-size: 20px;
 `;
 export const CardMediumTitle = styled.div`
