@@ -5,7 +5,7 @@ import { LIGHT_GREEN } from '../../colorPalette';
 export const MyLink = styled(Link)`
   text-decoration: none;
   color: #ffffff;
-  font-size: 30px;
+  font-size: 25px;
   padding: 10px;
 
   background-size: 200%;

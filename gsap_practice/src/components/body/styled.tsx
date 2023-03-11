@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { DARK_GREEN } from '../..//colorPalette';
+import { DARK_GREEN, LIGHT_GREEN } from '../..//colorPalette';
 export const Container = styled.section`
   display: flex;
   position: relative;
@@ -16,6 +16,10 @@ export const Contents = styled.article`
   color: black;
   justify-content: center;
   @media ${(props) => props.theme.tablet} {
+    width: 100vw;
+    margin: 0;
+  }
+  @media ${(props) => props.theme.mobile} {
     width: 100vw;
     margin: 0;
   }
@@ -41,16 +45,16 @@ export const ImgWrapper = styled.div`
   }
 `;
 export const IntroBodyContent = styled.div`
-  font-size: 30px;
   font-family: 'SpoqaMedium';
+  font-size: 25px;
   font-weight: normal;
   @media ${(props) => props.theme.tablet} {
     font-family: 'SpoqaRegular';
-    font-size: 22px;
+    font-size: 20px;
   }
   @media ${(props) => props.theme.mobile} {
-    font-family: 'SpoqaThin';
-    font-size: 16px;
+    font-family: 'SpoqaRegular';
+    font-size: 15px;
   }
 `;
 
@@ -110,4 +114,24 @@ export const Divider = styled.div`
   margin-top: 30px;
   background-color: ${DARK_GREEN};
   width: 90vw;
+`;
+
+export const Footer = styled.footer`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  font-family: 'SpoqaRegular';
+  font-size: 15px;
+  margin: 100px 0px;
+
+  a {
+    text-decoration: none;
+    font-size: 16px;
+    color: ${LIGHT_GREEN};
+    :hover {
+      color: ${DARK_GREEN};
+    }
+  }
 `;

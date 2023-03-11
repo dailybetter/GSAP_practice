@@ -9,6 +9,7 @@ import { FadeInUp } from '../gsap/FadeinUp';
 import { Ssafy } from './contents/Educations/Ssafy';
 import { Wanted } from './contents/Educations/Wanted';
 import { MyBlog } from './contents/Projects/Blog';
+import { FadeInOpacity } from '../gsap/FadeinOpacity';
 export const Body = () => {
   return (
     <Styled.Container>
@@ -82,6 +83,13 @@ export const Body = () => {
             <Styled.CardContentArea></Styled.CardContentArea>
           </FadeInUp>
         </Styled.Card>
+        <FadeInOpacity delay={1}>
+          <Styled.Footer>
+            관심으로 읽어주셔서 감사합니다. 연락주신다면 24시간 내로 답변 드리겠습니다.
+            <br />
+            <a href="mailto:rth634@naver.com">rth634@naver.com</a>
+          </Styled.Footer>
+        </FadeInOpacity>
       </Styled.Contents>
     </Styled.Container>
   );

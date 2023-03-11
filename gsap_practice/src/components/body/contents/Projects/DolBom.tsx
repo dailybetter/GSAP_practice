@@ -11,6 +11,19 @@ export const DolBom = () => {
         <Styled.CardExPlain>
           ✔ GitHub README를 통해 구현된 기능에 대한 gif를 확인해주세요!
         </Styled.CardExPlain>
+        <Styled.CardMediumTitle>Used</Styled.CardMediumTitle>
+        <Styled.CardExPlain>
+          🔧 React : 다양한 라이브러리와 도구들이 존재하고, Vue와 비교했을 때 더 자유도가
+          높은 개발환경을 제공한다고 생각하여 사용했습니다.
+        </Styled.CardExPlain>
+        <Styled.CardExPlain>
+          🔧 MUI : 정해진 시간 안에 빠르게 진행해야하는 프로젝트 였고, 반응형 디자인
+          제공해주기 때문에 사용했습니다. 사용하였습니다.
+        </Styled.CardExPlain>
+        <Styled.CardExPlain>
+          🔧 VITE : HotModuleReplace를 통해 코드 결과를 빠르게 확인할 수 있기 때문에
+          사용했습니다.
+        </Styled.CardExPlain>
         <Styled.CardMediumTitle>Links</Styled.CardMediumTitle>
         <Links
           text="돌봄 프로젝트 GitHub"

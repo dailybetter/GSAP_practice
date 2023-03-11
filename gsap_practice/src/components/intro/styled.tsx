@@ -57,6 +57,11 @@ export const BodyTextContainer = styled.div`
   justify-content: center;
   align-items: baseline;
   z-index: 1;
+  @media ${(props) => props.theme.tablet} {
+    justify-content: flex-end;
+    align-items: flex-start;
+    font-size: 30px;
+  }
 `;
 export const BodyTextDiv = styled.div`
   display: flex;
@@ -69,11 +74,10 @@ opacity: 1;
 margin-left: 50vw;
 font-family: 'SpoqaBold', sans-serif;
 font-weight: bold;
+font-size: 40px;
 @media ${(props) => props.theme.tablet} {
     font-size: 30px;
-
   }
-
   `;
 
 export const IconContainer = styled.div`
