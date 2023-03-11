@@ -40,13 +40,13 @@ export const ImgWrapper = styled.div`
     max-width: 338px;
   }
 `;
-export const BodyContent = styled.div`
+export const IntroBodyContent = styled.div`
   font-size: 30px;
   font-family: 'SpoqaMedium';
   font-weight: normal;
   @media ${(props) => props.theme.tablet} {
     font-family: 'SpoqaRegular';
-    font-size: 25px;
+    font-size: 22px;
   }
   @media ${(props) => props.theme.mobile} {
     font-family: 'SpoqaThin';
