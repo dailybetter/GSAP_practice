@@ -22,7 +22,7 @@ export const Intro = () => {
       <Styled.Main>
         <Styled.MainAppBar />
         <Styled.BodyTextContainer>
-          <Styled.BodyText className="one">안녕하세요!</Styled.BodyText>
+          <Styled.BodyText className="one">안녕하십니까!</Styled.BodyText>
           <Styled.BodyText className="two">자발적 학습과 성장을 즐기는</Styled.BodyText>
           <Styled.BodyText className="tre">
             <UnderLine color={LIGHT_GREEN} delay={2.5}>
@@ -32,7 +32,7 @@ export const Intro = () => {
           </Styled.BodyText>
         </Styled.BodyTextContainer>
         <Styled.BackgrouundImg>
-          <img src="/main.jpg" alt="background" draggable={false} />
+          <img src="/main_web.jpg" alt="background" draggable={false} />
         </Styled.BackgrouundImg>
         <Styled.IconContainer>
           <Styled.ArrowDownButton
