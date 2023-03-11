@@ -64,12 +64,16 @@ export const BodyTextDiv = styled.div`
   justify-content: flex-end;
 `;
 export const BodyText = styled.div`
-  font-size: 40px;
-  flex
-  opacity: 1;
-  margin-left: 50vw;
-  font-family: 'SpoqaBold', sans-serif;
-  font-weight: bold;
+flex
+opacity: 1;
+margin-left: 50vw;
+font-family: 'SpoqaBold', sans-serif;
+font-weight: bold;
+@media ${(props) => props.theme.tablet} {
+    font-size: 30px;
+
+  }
+
   `;
 
 export const IconContainer = styled.div`
