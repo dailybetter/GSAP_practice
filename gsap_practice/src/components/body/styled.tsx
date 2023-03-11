@@ -16,11 +16,7 @@ export const Contents = styled.article`
   color: black;
   justify-content: center;
   @media ${(props) => props.theme.tablet} {
-    width: 80vw;
-    margin: 0;
-  }
-  @media ${(props) => props.theme.mobile} {
-    width: 80vw;
+    width: 100vw;
     margin: 0;
   }
 `;
@@ -48,6 +44,10 @@ export const BodyContent = styled.div`
   font-size: 30px;
   font-family: 'SpoqaMedium';
   font-weight: normal;
+  @media ${(props) => props.theme.tablet} {
+    font-family: 'SpoqaRegular';
+    font-size: 25px;
+  }
   @media ${(props) => props.theme.mobile} {
     font-family: 'SpoqaThin';
     font-size: 16px;

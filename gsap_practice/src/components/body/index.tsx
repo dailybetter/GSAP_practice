@@ -8,6 +8,7 @@ import { MyPortfolio } from './contents/Projects/PortFolio';
 import { FadeInUp } from '../gsap/FadeinUp';
 import { Ssafy } from './contents/Educations/Ssafy';
 import { Wanted } from './contents/Educations/Wanted';
+import { MyBlog } from './contents/Projects/Blog';
 export const Body = () => {
   return (
     <Styled.Container>
@@ -23,7 +24,7 @@ export const Body = () => {
           <FadeInUp delay={0.3}>
             <Styled.IntroContainer>
               <Styled.ImgWrapper>
-                <img src="/profile.jpg" alt="Myprofile" />
+                <img src="/aicon.jpg" alt="Myprofile" />
               </Styled.ImgWrapper>
               <Styled.CardContentArea>
                 <IntroContents />
@@ -49,6 +50,12 @@ export const Body = () => {
           <FadeInUp delay={0.3}>
             <Styled.CardTitleArea>
               <MyPortfolio />
+            </Styled.CardTitleArea>
+            <Styled.CardContentArea></Styled.CardContentArea>
+          </FadeInUp>
+          <FadeInUp delay={0.3}>
+            <Styled.CardTitleArea>
+              <MyBlog />
             </Styled.CardTitleArea>
             <Styled.CardContentArea></Styled.CardContentArea>
           </FadeInUp>

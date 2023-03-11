@@ -40,9 +40,8 @@ const Section = styled.section`
   flex-direction: column;
 `;
 
-if (typeof window !== 'undefined') {
-  gsap.registerPlugin(ScrollTrigger);
-}
+gsap.registerPlugin(ScrollTrigger);
+
 function App() {
   return (
     <ThemeProvider theme={theme}>
