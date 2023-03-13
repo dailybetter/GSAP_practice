@@ -9,6 +9,7 @@ import { ThemeProvider } from 'styled-components';
 import { theme } from './theme';
 
 const GlobalStyle = createGlobalStyle`
+overflow: hidden;
   @font-face {
     font-family: 'SpoqaBold';
     src: url('/fonts/SpoqaHanSansNeo-Bold.otf') format('opentype');

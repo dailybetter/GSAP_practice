@@ -23,11 +23,11 @@ export const Main = styled.article`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 100%;
+  width: 100vw;
   height: 100%;
 
   @media ${(props) => props.theme.tablet} {
-    width: 100%;
+    width: 100vw;
     height: 100vh;
   }
 

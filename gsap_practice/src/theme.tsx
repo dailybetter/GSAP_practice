@@ -9,4 +9,5 @@ export const theme: DefaultTheme = {
   mobile: `screen and (max-width: ${size.mobile})`,
   tablet: `screen and (min-width: ${size.mobile})  and (max-width: ${size.desktop})`,
   desktop: `screen and (min-width: ${size.desktop})`,
+  overflow: 'hidden',
 };

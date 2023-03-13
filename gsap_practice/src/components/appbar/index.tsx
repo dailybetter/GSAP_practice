@@ -61,7 +61,7 @@ export const MyAppBar = (props: Props) => {
   const container = window !== undefined ? () => window().document.body : undefined;
 
   return (
-    <Box sx={{ display: 'flex' }}>
+    <Box sx={{ display: 'flex', m: 0, p: 0 }}>
       <CssBaseline />
       <AppBar
         component="nav"
@@ -72,7 +72,7 @@ export const MyAppBar = (props: Props) => {
           boxShadow: 'none',
         }}
       >
-        <Toolbar>
+        <Toolbar sx={{ m: 0, p: 0 }}>
           <IconButton
             color="inherit"
             aria-label="open drawer"
@@ -132,7 +132,7 @@ export const MyAppBar = (props: Props) => {
         </Drawer>
       </Box>
       <Box component="main" sx={{ p: 3 }}>
-        <Toolbar />
+        <Toolbar sx={{ m: 0, p: 0 }} />
       </Box>
     </Box>
   );

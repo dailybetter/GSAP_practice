@@ -11,7 +11,7 @@ export const Contents = styled.article`
   display: flex;
   flex-direction: column;
   width: 80vw;
-  margin: 0vh 10vh;
+  margin: 0vw 10vh;
   padding: 40px;
   color: black;
   justify-content: center;
@@ -129,7 +129,7 @@ export const Footer = styled.footer`
   width: 100%;
   font-family: 'SpoqaRegular';
   font-size: 15px;
-  margin: 100px 0px;
+  margin: 50px 0px;
 
   a {
     text-decoration: none;
