@@ -8,7 +8,7 @@ export const IntroContents = () => {
       <br></br>
       <br></br>
       이를 바탕으로 저의 코드가 어떤 비즈니스 가치를 갖게 될지, 그 가치를 어떻게 전달해야
-      할지 항상 고민하는 FE 개발자가 되고 싶습니다.
+      할지 고민하는 FE 개발자가 되고 싶습니다.
     </Styled.IntroBodyContent>
   );
 };
