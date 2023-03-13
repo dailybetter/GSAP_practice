@@ -17,7 +17,7 @@ export const MyLink = styled(Link)`
 
 export const Title = styled.div`
   font-family: 'SpoqaThin', sans-serif;
-  font-size: 30px;
+  font-size: 25px;
   flex-grow: 1;
   font-weight: bold;
 `;
