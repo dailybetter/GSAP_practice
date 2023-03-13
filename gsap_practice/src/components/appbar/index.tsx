@@ -8,8 +8,6 @@ import IconButton from '@mui/material/IconButton';
 import List from '@mui/material/List';
 import MenuIcon from '@mui/icons-material/Menu';
 import Toolbar from '@mui/material/Toolbar';
-import Typography from '@mui/material/Typography';
-import Button from '@mui/material/Button';
 import * as Styled from './styled';
 import Link from '@mui/material/Link';
 import { LIGHT_GREEN } from '../../colorPalette';
@@ -29,7 +27,7 @@ export const MyAppBar = (props: Props) => {
 
   const drawer = (
     <Box onClick={handleDrawerToggle} sx={{ textAlign: 'center' }}>
-      <Styled.Text>Porfolio</Styled.Text>
+      <Styled.Title>Porfolio</Styled.Title>
       <Divider />
       <List>
         <Styled.MyLink
@@ -84,7 +82,7 @@ export const MyAppBar = (props: Props) => {
           >
             <MenuIcon />
           </IconButton>
-          <Styled.Text>Portfolio</Styled.Text>
+          <Styled.Title>Portfolio</Styled.Title>
           <Box sx={{ display: { xs: 'none', sm: 'block' } }}>
             <Styled.MyLink
               color="#FFFFFF"
