@@ -29,7 +29,7 @@ export const MyAppBar = (props: Props) => {
 
   const drawer = (
     <Box onClick={handleDrawerToggle} sx={{ textAlign: 'center' }}>
-      <Styled.Text>개발자 박현우</Styled.Text>
+      <Styled.Text>Porfolio</Styled.Text>
       <Divider />
       <List>
         <Styled.MyLink
@@ -84,7 +84,7 @@ export const MyAppBar = (props: Props) => {
           >
             <MenuIcon />
           </IconButton>
-          <Styled.Text>개발자 박현우</Styled.Text>
+          <Styled.Text>Portfolio</Styled.Text>
           <Box sx={{ display: { xs: 'none', sm: 'block' } }}>
             <Styled.MyLink
               color="#FFFFFF"

@@ -4,7 +4,9 @@ export const Ssafy = () => {
   return (
     <>
       <Styled.CardContentTitle>삼성 청년 SW 아카데미</Styled.CardContentTitle>
-      <Styled.CardContentPeriod>2022 July . 1year . 현재 진행중</Styled.CardContentPeriod>
+      <Styled.CardContentPeriod>
+        2022-07 ~ 2023-06 . 1year . 현재 진행중
+      </Styled.CardContentPeriod>
       <Styled.CardExplainContainer>
         <Styled.CardExPlain>
           ✔ 6개월간 알고리즘스터디를 운영하며 삼성 SW역량 평가 모의 A형 취득

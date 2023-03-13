@@ -4,9 +4,7 @@ export const MyPortfolio = () => {
   return (
     <>
       <Styled.CardContentTitle>MyPortfolio</Styled.CardContentTitle>
-      <Styled.CardContentPeriod>
-        2023 Mach . 2weeks . PersonalProject
-      </Styled.CardContentPeriod>
+      <Styled.CardContentPeriod>2023-03 . 2weeks . 개인프로젝트</Styled.CardContentPeriod>
       <Styled.CardExplainContainer>
         <Styled.CardExPlain>✔ 나만의 포트폴리오 개발</Styled.CardExPlain>
         <Styled.CardExPlain>✔ GSAP을 활용한 애니메이션 구현</Styled.CardExPlain>

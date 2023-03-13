@@ -5,7 +5,7 @@ export const MyBlog = () => {
     <>
       <Styled.CardContentTitle>MyBlog</Styled.CardContentTitle>
       <Styled.CardContentPeriod>
-        2022 April . 2weeks . PersonalProject
+        2022-04 . 2weeks . 개인 프로젝트
       </Styled.CardContentPeriod>
       <Styled.CardExplainContainer>
         <Styled.CardExPlain>✔ 나만의 블로그 개발</Styled.CardExPlain>

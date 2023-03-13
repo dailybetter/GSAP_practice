@@ -1,10 +1,9 @@
 import gsap from 'gsap';
 import React from 'react';
-import { useRef, useEffect } from 'react';
+import { useEffect } from 'react';
 import * as Styled from './styled';
 import { LIGHT_GREEN } from '../../colorPalette';
 import { UnderLine } from '../gsap/UnderLine';
-import KeyboardDoubleArrowDownIcon from '@mui/icons-material/KeyboardDoubleArrowDown';
 export const Intro = () => {
   useEffect(() => {
     gsap.defaults({ duration: 1 });
