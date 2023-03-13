@@ -8,11 +8,8 @@ export const DolBom = () => {
         2023-01 . 6weeks . 팀프로젝트 백엔드 3 프론트 2
       </Styled.CardContentPeriod>
       <Styled.CardExplainContainer>
-        <Styled.CardExPlain>✔ 상담사를 위한 비대면 상담플랫폼</Styled.CardExPlain>
+        <Styled.CardExPlain>✔ 상담사를 위한 비대면 상담 웹 서비스</Styled.CardExPlain>
         <Styled.CardExPlain>✔ 캘린더 기능과 드라이브 기능 개발 담당</Styled.CardExPlain>
-        <Styled.CardExPlain>
-          ✔ GitHub README를 통해 구현된 기능에 대한 gif를 확인해주세요!
-        </Styled.CardExPlain>
         <Styled.CardMediumTitle>Used</Styled.CardMediumTitle>
         <Styled.CardExPlain>
           🔧 React : 다양한 라이브러리와 도구들이 존재하고, Vue와 비교했을 때 더 자유도가
@@ -32,11 +29,7 @@ export const DolBom = () => {
           href="https://github.com/dailybetter/DOLBOMpjt"
         />
         <Links
-          text="돌봄 프로젝트 전반적 회고 "
-          href="https://dailybetter.github.io/retrospective/projectRet/"
-        />
-        <Links
-          text="프로젝트를 진행하며 고민했던 것 들 "
+          text="프로젝트를 진행하며 고민했던 것들 "
           href="https://dailybetter.github.io/retrospective/pjtRet/"
         />
       </Styled.CardExplainContainer>
