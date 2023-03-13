@@ -113,7 +113,12 @@ export const Divider = styled.div`
   height: 6.5px;
   margin-top: 30px;
   background-color: ${DARK_GREEN};
-  width: 90vw;
+  width: 80vw;
+  @media ${(props) => props.theme.tablet} {
+    font-family: 'SpoqaBold';
+    font-size: 45px;
+    width: 90vw;
+  }
 `;
 
 export const Footer = styled.footer`

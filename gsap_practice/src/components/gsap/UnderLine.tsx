@@ -14,8 +14,8 @@ interface UnderlineProps {
 
 const UnderlineContainer = styled.span`
   background-image: linear-gradient(
-    transparent 80%,
-    ${(props: Color) => props.color} 20%
+    transparent 60%,
+    ${(props: Color) => props.color} 40%
   );
   background-size: 0% 100%;
   background-repeat: no-repeat;
