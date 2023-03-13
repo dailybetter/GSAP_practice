@@ -21,8 +21,8 @@ export const Intro = () => {
       <Styled.Main>
         <Styled.MainAppBar />
         <Styled.BodyTextContainer>
-          <Styled.BodyText className="one">안녕하십니까!</Styled.BodyText>
-          <Styled.BodyText className="two">자발적 학습과 성장을 즐기는</Styled.BodyText>
+          <Styled.BodyText className="one">UX에 대해 고민하는</Styled.BodyText>
+          <Styled.BodyText className="two">FE 개발자</Styled.BodyText>
           <Styled.BodyText className="tre">
             <UnderLine color={LIGHT_GREEN} delay={2.5}>
               박현우
