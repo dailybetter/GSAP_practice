@@ -89,18 +89,57 @@ export const CardContentTitle = styled.span`
     font-size: 45px;
   }
 `;
-export const CardContentPeriod = styled.span`
+export const CardContentPeriod = styled.div`
   font-size: 18px;
   font-family: 'SpoqaThin';
 `;
 
+export const WorkCardExplainContainer = styled.article`
+  display: flex;
+  flex-direction: row;
+  row-gap: 5vh;
+  margin-top: 30px;
+`;
+export const JobTitleContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  width: 250px;
+  @media ${(props) => props.theme.tablet} {
+    width: 20vw;
+  }
+`;
+export const JobTitle = styled.span`
+  font-family: 'SpoqaMedium';
+  font-size: 30px;
+  @media ${(props) => props.theme.tablet} {
+    font-size: 20px;
+  }
+`;
+export const JobPeriod = styled.span`
+  font-family: 'SpoqaThin';
+  font-size: 10px;
+  @media ${(props) => props.theme.tablet} {
+    font-size: 8px;
+  }
+`;
 export const CardExplainContainer = styled.article`
   display: flex;
   flex-direction: column;
+  margin-left: 3vw;
   row-gap: 7px;
-  margin-top: 30px;
 `;
 
+export const WorkCardExPlain = styled.div`
+  font-family: 'SpoqaRegular';
+  font-size: 20px;
+  padding-left: 3vw;
+  @media ${(props) => props.theme.tablet} {
+    font-size: 18px;
+  }
+  @media ${(props) => props.theme.mobile} {
+    opacity: 0;
+  }
+`;
 export const CardExPlain = styled.div`
   font-family: 'SpoqaRegular';
   font-size: 20px;
