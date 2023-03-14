@@ -9,7 +9,6 @@ import { ThemeProvider } from 'styled-components';
 import { theme } from './theme';
 
 const GlobalStyle = createGlobalStyle`
-overflow: hidden;
   @font-face {
     font-family: 'SpoqaBold';
     src: url('/fonts/SpoqaHanSansNeo-Bold.otf') format('opentype');
@@ -34,7 +33,8 @@ overflow: hidden;
     font-weight: normal;
     font-style: normal;
   }
-`;
+  `;
+
 const Section = styled.section`
   position: relative;
   display: flex;
