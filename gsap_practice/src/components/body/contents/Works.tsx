@@ -5,7 +5,7 @@ export const Works = () => {
     <>
       <Styled.CardContentTitle>NETON</Styled.CardContentTitle>
       <Styled.CardContentPeriod>
-        얼굴인식 기술을 활용한 솔루션 스타트업
+        얼굴인식 기술을 활용한 IT 스타트업
       </Styled.CardContentPeriod>
       <Styled.WorkCardExplainContainer>
         <Styled.JobTitleContainer>
