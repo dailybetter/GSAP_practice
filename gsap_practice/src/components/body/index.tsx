@@ -20,7 +20,7 @@ export const Body = () => {
   };
   const tinyExplodeProps = {
     force: 0.4,
-    duration: 2000,
+    duration: 5000,
     particlecount: 30,
     floorheight: 500,
     floorwidth: 300,
