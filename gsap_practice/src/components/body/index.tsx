@@ -7,10 +7,24 @@ import { DolBom } from './contents/Projects/DolBom';
 import { MyPortfolio } from './contents/Projects/PortFolio';
 import { FadeInUp } from '../gsap/FadeinUp';
 import { Ssafy } from './contents/Educations/Ssafy';
-import { Wanted } from './contents/Educations/Wanted';
+import ConfettiExplosion from 'react-confetti-explosion';
+// import { Wanted } from './contents/Educations/Wanted';
 import { MyBlog } from './contents/Projects/Blog';
 import { FadeInOpacity } from '../gsap/FadeinOpacity';
+import { Works } from './contents/Works';
+import { useState } from 'react';
 export const Body = () => {
+  const [isExploding, setIsExploding] = useState(false);
+  const EmailClick = () => {
+    setIsExploding(!isExploding);
+  };
+  const tinyExplodeProps = {
+    force: 0.4,
+    duration: 2000,
+    particlecount: 30,
+    floorheight: 500,
+    floorwidth: 300,
+  };
   return (
     <Styled.Container>
       <Styled.Contents>
@@ -24,9 +38,6 @@ export const Body = () => {
           </Styled.StyledBodyTitle>
           <FadeInUp delay={0.3}>
             <Styled.IntroContainer>
-              <Styled.ImgWrapper>
-                <img src="/aicon.jpg" alt="Myprofile" />
-              </Styled.ImgWrapper>
               <Styled.CardContentArea>
                 <IntroContents />
               </Styled.CardContentArea>
@@ -66,6 +77,21 @@ export const Body = () => {
           <Styled.StyledBodyTitle>
             <FadeInContent delay={1}>
               <UnderLine color={LIGHT_GREEN} delay={1}>
+                Works
+              </UnderLine>
+            </FadeInContent>
+          </Styled.StyledBodyTitle>
+          <FadeInUp delay={0.3}>
+            <Styled.CardTitleArea>
+              <Works />
+            </Styled.CardTitleArea>
+          </FadeInUp>
+        </Styled.Card>
+        <Styled.Divider />
+        <Styled.Card>
+          <Styled.StyledBodyTitle>
+            <FadeInContent delay={1}>
+              <UnderLine color={LIGHT_GREEN} delay={1}>
                 Education
               </UnderLine>
             </FadeInContent>
@@ -74,20 +100,16 @@ export const Body = () => {
             <Styled.CardTitleArea>
               <Ssafy />
             </Styled.CardTitleArea>
-            {/* <Styled.CardContentArea></Styled.CardContentArea> */}
-          </FadeInUp>
-          <FadeInUp delay={0.3}>
-            <Styled.CardTitleArea>
-              <Wanted />
-            </Styled.CardTitleArea>
-            <Styled.CardContentArea></Styled.CardContentArea>
           </FadeInUp>
         </Styled.Card>
-        <FadeInOpacity delay={1}>
+        <FadeInOpacity delay={0.3}>
           <Styled.Footer>
+            {isExploding && <ConfettiExplosion {...tinyExplodeProps} />}
             관심으로 읽어주셔서 감사합니다. 연락주신다면 24시간 내로 답변 드리겠습니다.
             <br />
-            <a href="mailto:rth634@naver.com">rth634@naver.com</a>
+            <a href="mailto:rth634@naver.com" onClick={EmailClick}>
+              rth634@naver.com
+            </a>
           </Styled.Footer>
         </FadeInOpacity>
       </Styled.Contents>

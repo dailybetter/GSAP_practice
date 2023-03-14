@@ -5,7 +5,7 @@ export const Ssafy = () => {
     <>
       <Styled.CardContentTitle>삼성 청년 SW 아카데미</Styled.CardContentTitle>
       <Styled.CardContentPeriod>
-        2022-07 ~ 2023-06 . 1year . 현재 진행중
+        2022-07 ~ 2023-06 . 1년 . 현재 진행중
       </Styled.CardContentPeriod>
       <Styled.CardExplainContainer>
         <Styled.CardExPlain>

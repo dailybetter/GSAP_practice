@@ -51,6 +51,7 @@ export const IntroBodyContent = styled.div`
   @media ${(props) => props.theme.tablet} {
     font-family: 'SpoqaRegular';
     font-size: 20px;
+    max-width: 80%;
   }
   @media ${(props) => props.theme.mobile} {
     font-family: 'SpoqaRegular';

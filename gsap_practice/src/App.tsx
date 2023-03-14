@@ -42,7 +42,6 @@ const Section = styled.section`
 `;
 
 gsap.registerPlugin(ScrollTrigger);
-
 function App() {
   return (
     <ThemeProvider theme={theme}>
