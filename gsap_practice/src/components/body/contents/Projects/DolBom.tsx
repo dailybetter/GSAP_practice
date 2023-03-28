@@ -11,7 +11,9 @@ export const DolBom = () => {
         <Styled.CardExPlain>✔ 상담사를 위한 비대면 상담 웹 서비스</Styled.CardExPlain>
         <Styled.CardExPlain>✔ 캘린더 기능과 드라이브 기능 개발 담당</Styled.CardExPlain>
         <Styled.CardMediumTitle>Used</Styled.CardMediumTitle>
-        <Styled.CardExPlain>🔧 React , TypeScript , React-Query , MUI</Styled.CardExPlain>
+        <Styled.CardExPlain>
+          🔧 React , TypeScript , Redux, React-Query , MUI
+        </Styled.CardExPlain>
         <Styled.CardMediumTitle>Links</Styled.CardMediumTitle>
         <Links
           text="돌봄 프로젝트 GitHub"

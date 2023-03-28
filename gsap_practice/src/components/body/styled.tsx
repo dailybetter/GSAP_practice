@@ -92,6 +92,7 @@ export const CardContentTitle = styled.span`
 export const CardContentPeriod = styled.div`
   font-size: 18px;
   font-family: 'SpoqaThin';
+  margin-bottom: 1em;
 `;
 
 export const WorkCardExplainContainer = styled.article`
