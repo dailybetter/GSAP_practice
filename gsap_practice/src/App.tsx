@@ -7,7 +7,7 @@ import { Body } from './components/body';
 import { createGlobalStyle } from 'styled-components';
 import { ThemeProvider } from 'styled-components';
 import { theme } from './theme';
-
+import { MainFooter } from './components/Footer';
 const GlobalStyle = createGlobalStyle`
   @font-face {
     font-family: 'SpoqaBold';
@@ -50,6 +50,7 @@ function App() {
         <Intro />
         <Body />
       </Section>
+      <MainFooter />
     </ThemeProvider>
   );
 }

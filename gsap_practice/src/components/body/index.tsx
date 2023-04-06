@@ -7,24 +7,9 @@ import { DolBom } from './contents/Projects/DolBom';
 import { MyPortfolio } from './contents/Projects/PortFolio';
 import { FadeInUp } from '../gsap/FadeinUp';
 import { Ssafy } from './contents/Educations/Ssafy';
-import ConfettiExplosion from 'react-confetti-explosion';
-// import { Wanted } from './contents/Educations/Wanted';
 import { MyBlog } from './contents/Projects/Blog';
-import { FadeInOpacity } from '../gsap/FadeinOpacity';
 import { Works } from './contents/Works';
-import { useState } from 'react';
 export const Body = () => {
-  const [isExploding, setIsExploding] = useState(false);
-  const EmailClick = () => {
-    setIsExploding(!isExploding);
-  };
-  const tinyExplodeProps = {
-    force: 0.4,
-    duration: 5000,
-    particlecount: 30,
-    floorheight: 500,
-    floorwidth: 300,
-  };
   return (
     <Styled.Container>
       <Styled.Contents>
@@ -102,16 +87,6 @@ export const Body = () => {
             </Styled.CardTitleArea>
           </FadeInUp>
         </Styled.Card>
-        <FadeInOpacity delay={0.3}>
-          <Styled.Footer>
-            {isExploding && <ConfettiExplosion {...tinyExplodeProps} />}
-            관심으로 읽어주셔서 감사합니다. 연락주신다면 24시간 내로 답변 드리겠습니다.
-            <br />
-            <a href="mailto:rth634@naver.com" onClick={EmailClick}>
-              rth634@naver.com
-            </a>
-          </Styled.Footer>
-        </FadeInOpacity>
       </Styled.Contents>
     </Styled.Container>
   );
