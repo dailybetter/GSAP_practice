@@ -39,6 +39,7 @@ const Section = styled.section`
   position: relative;
   display: flex;
   flex-direction: column;
+  background-color: rgb(245, 245, 245);
 `;
 
 gsap.registerPlugin(ScrollTrigger);
@@ -49,8 +50,8 @@ function App() {
       <Section>
         <Intro />
         <Body />
+        <MainFooter />
       </Section>
-      <MainFooter />
     </ThemeProvider>
   );
 }
