@@ -20,4 +20,12 @@ export const Title = styled.div`
   font-size: 25px;
   flex-grow: 1;
   font-weight: bold;
+  @media ${(props) => props.theme.tablet} {
+    font-family: 'SpoqaMedium'
+    font-size: 18px;
+  }
+  @media ${(props) => props.theme.mobile} {
+    font-family: 'SpoqaBold'
+    font-size: 20px;
+  }
 `;

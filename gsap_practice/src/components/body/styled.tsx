@@ -31,6 +31,12 @@ export const StyledBodyTitle = styled.div`
   font-weight: bold;
   margin: 0;
   column-gap: 20px;
+  @media ${(props) => props.theme.tablet} {
+    font-size: 50px;
+  }
+  @media ${(props) => props.theme.mobile} {
+    font-size: 30px;
+  }
 `;
 
 export const IntroContainer = styled.article`
@@ -83,16 +89,27 @@ export const CardTitleArea = styled.article`
 export const CardContentTitle = styled.span`
   font-size: 45px;
   font-family: 'SpoqaMedium';
-
+  @media ${(props) => props.theme.tablet} {
+    font-family: 'SpoqaBold';
+    font-size: 30px;
+  }
   @media ${(props) => props.theme.mobile} {
     font-family: 'SpoqaBold';
-    font-size: 45px;
+    font-size: 30px;
   }
 `;
 export const CardContentPeriod = styled.div`
   font-size: 18px;
   font-family: 'SpoqaThin';
   margin-bottom: 1em;
+  @media ${(props) => props.theme.tablet} {
+    font-family: 'SpoqaThin';
+    font-size: 15px;
+  }
+  @media ${(props) => props.theme.mobile} {
+    font-family: 'SpoqaThin';
+    font-size: 13px;
+  }
 `;
 
 export const WorkCardExplainContainer = styled.article`
@@ -114,6 +131,9 @@ export const JobTitle = styled.span`
   font-size: 30px;
   @media ${(props) => props.theme.tablet} {
     font-size: 20px;
+  }
+  @media ${(props) => props.theme.mobile} {
+    font-size: 15px;
   }
 `;
 export const JobPeriod = styled.span`
@@ -138,12 +158,18 @@ export const WorkCardExPlain = styled.div`
     font-size: 18px;
   }
   @media ${(props) => props.theme.mobile} {
-    opacity: 0;
+    font-size: 13px;
   }
 `;
 export const CardExPlain = styled.div`
   font-family: 'SpoqaRegular';
   font-size: 20px;
+  @media ${(props) => props.theme.tablet} {
+    font-size: 18px;
+  }
+  @media ${(props) => props.theme.mobile} {
+    font-size: 18px;
+  }
 `;
 export const CardMediumTitle = styled.div`
   font-family: 'SpoqaMedium';

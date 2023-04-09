@@ -23,6 +23,12 @@ const LinkText = styled.a`
     background-position: -100% 0;
     color: White;
   }
+  @media ${(props) => props.theme.tablet} {
+    font-size: 18px;
+  }
+  @media ${(props) => props.theme.mobile} {
+    font-size: 13px;
+  }
 `;
 export const Links = ({ text, href }: LinkProps) => {
   if (text.includes('GitHub')) {
